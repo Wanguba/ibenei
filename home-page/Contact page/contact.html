@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/home-page/home.css">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact Us</title>
+</head>
+<body>
+    <form id="contactForm" action="https://formspree.io/f/xvgoroby" method="POST">
+        <h1 id="Header">Contact Us</h1>
+        <input id="Email" type="email" name="email" placeholder="Enter Email" required><br>
+        <input id="Name" type="text" name="name" placeholder="Your Name" required><br>
+        <textarea id="Message" name="message" placeholder="Your Message" required></textarea><br>
+        <button type="submit">SEND MESSAGE</button>
+    </form>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting
+
+            const email = document.getElementById('Email').value;
+            const name = document.getElementById('Name').value;
+            const message = document.getElementById('Message').value;
+
+            // Simple email validation
+            const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+            if (!email.match(emailPattern)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+
+            // Check if name and message are not empty
+            if (name === '') {
+                alert('Please enter your name.');
+                return;
+            }
+
+            if (message === '') {
+                alert('Please enter your message.');
+                return;
+            }
+
+            // Optionally, you can reset the form after submission
+            alert('Your message has been sent successfully!');
+            document.getElementById('contactForm').reset();
+        });
+    </script>
+</body>
+</html>
+
+

@@ -1,0 +1,157 @@
+/* Global styles */
+body {
+    background-color: #1e2b3c; /* Blue background for entire page */
+    font-family: 'Arial', sans-serif;
+    color: aliceblue; /* Light text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Container for centering */
+.container {
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: #1e2b3c; /* Blue background for the form */
+    border: 2px solid #ff8c00; /* Thin orange border */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Softer shadow */
+    color: aliceblue;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for container */
+.container:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+    border-color: #e67e00; /* Darker orange border on hover */
+}
+
+/* Title styling */
+h2, h3 {
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Arial', sans-serif; /* Adjusted font */
+}
+
+/* Order Summary */
+.order-summary {
+    margin-bottom: 1em;
+    font-size: 1.1em;
+    border: 1px solid #ddd; /* Border around order summary */
+    padding: 1em;
+    border-radius: 10px;
+    background-color: #2b3e50; /* Darker blue for the summary */
+}
+
+.order-summary .item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+    color: aliceblue;
+}
+
+.order-summary .total {
+    font-weight: bold;
+    color: #ff8c00; /* Orange for the total */
+    border-top: 2px solid #ddd;
+    padding-top: 0.5em;
+    margin-top: 0.5em;
+}
+
+/* Form headings */
+.form-section-heading {
+    color: aliceblue;
+    font-weight: bold;
+    margin: 1em 0 0.5em;
+}
+
+/* Input fields */
+input[type="text"], input[type="email"], input[type="tel"] {
+    width: 100%;
+    padding: 0.7em;
+    margin: 0.5em 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus {
+    border-color: #ff8c00; /* Orange border on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 140, 0, 0.3); /* Subtle orange shadow */
+}
+
+/* Radio buttons */
+.radio-group {
+    margin-top: 1em;
+}
+
+.radio-group label {
+    display: inline-block;
+    margin-right: 1em;
+    font-size: 0.95em;
+    color: aliceblue;
+}
+
+input[type="radio"] {
+    margin-right: 0.5em;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 0.8em;
+    margin-top: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff8c00; /* Orange button color */
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform for scale effect */
+}
+
+button:hover {
+    background-color: #e67e00; /* Darker orange on hover */
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+/* Remove unwanted list styles */
+ul {
+    display: none;
+}
+
+/* Link styling */
+a {
+    color: #ff8c00;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .container {
+        padding: 1.5em;
+    }
+
+    h2, h3 {
+        font-size: 1.5em;
+    }
+
+    button {
+        font-size: 1em;
+    }
+}
+
+
+
+

@@ -1,0 +1,49 @@
+form{
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    margin-bottom: 10px;
+    transition: 0.6s;
+}
+input:hover{
+    height: 6vh;
+        box-shadow: 0 0 2vh #c36500;
+}
+placeholder{
+    align-items: center;
+}
+
+#text{
+    height: 20vh;
+}
+
+#Email{
+    margin-bottom: 10px;
+}
+button{
+    margin-top: 8px;
+    width:55vh;
+    height: 6vh;
+}
+
+#Header{
+        color: aliceblue;
+    background-color: #1e2b3c;
+    font-size: xx-large;
+    align-items: center;
+    margin-left: 17vh;
+}
+form{
+    border: 1px solid;
+    border-color: rgb(255, 179, 0);
+    padding: 5vh;
+    border-radius: 50px;
+    box-shadow: 0 0 10vh #c36500;
+    transition: 0.2s;
+}
+form :hover{
+    border: none;
+
+}
